@@ -1,6 +1,6 @@
 {
   "name": "@sango-tech/vue3-html2pdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A vue3 wrapper that use html2pdf for convert html to pdf",
   "main": "dist/vue3-html2pdf.ssr.js",
   "module": "dist/vue3-html2pdf.esm.js",
