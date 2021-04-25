@@ -1,13 +1,12 @@
 {
-  "name": "@sango-tech/vue3-html2pdf",
-  "version": "1.0.1",
+  "name": "vue3-html2pdf",
+  "version": "1.1.2",
   "description": "A vue3 wrapper that use html2pdf for convert html to pdf",
-  "main": "dist/vue3-html2pdf.ssr.js",
-  "module": "dist/vue3-html2pdf.esm.js",
-  "unpkg": "dist/vue3-html2pdf.min.js",
+  "main": "src/index.js",
+  "types": "type.d.ts",
   "files": [
-    "dist/*",
-    "src/**/*.vue"
+    "src/*",
+    "type.d.ts"
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
@@ -24,20 +23,22 @@
     "html2pdf"
   ],
   "dependencies": {
+    "@vue/compiler-sfc": "^3.0.11",
     "html2pdf.js": "^0.9.2"
   },
   "devDependencies": {
-    "@rollup/plugin-alias": "^2.2.0",
-    "@rollup/plugin-buble": "^0.20.0",
-    "@rollup/plugin-replace": "^2.3.1",
-    "cross-env": "^6.0.3",
-    "minimist": "^1.2.0",
-    "rollup": "^1.31.1",
+    "@rollup/plugin-alias": "^3.1.2",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-replace": "^2.4.2",
+    "cross-env": "^7.0.3",
+    "minimist": "^1.2.5",
+    "rollup": "^2.45.2",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "rollup-plugin-vue": "5.1.1",
-    "vue": "^2.6.11",
-    "vue-template-compiler": "^2.6.11"
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-vue": "6.0.0",
+    "typescript": "^4.1.2",
+    "vue": "^3.0.0",
+    "vue-template-compiler": "^2.6.12"
   },
   "engines": {
     "node": ">=8"

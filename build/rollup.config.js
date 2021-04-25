@@ -13,7 +13,7 @@ const argv = minimist(process.argv.slice(2));
 const projectRoot = path.resolve(__dirname, '..');
 
 const baseConfig = {
-  input: 'src/entry.js',
+  input: 'src/index.js',
   plugins: {
     preVue: [
       replace({
