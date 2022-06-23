@@ -1,6 +1,8 @@
 # vue3-html2pdf
-Customize from
+vue-html2pdf working with Vue 3
 
+## Breaking changes
+- Use `<template  v-slot:pdf-content>` instead of `<section slot="pdf-content">`
 
 # VueHTML2PDF Documentation
 
@@ -93,9 +95,9 @@ To use it in the template
         @hasGenerated="hasGenerated($event)"
         ref="html2Pdf"
     >
-        <section slot="pdf-content">
+        <template  v-slot:pdf-content>
             <!-- PDF Content Here -->
-        </section>
+        </template>
     </vue3-html2pdf>
    </div>
 </template>
@@ -122,8 +124,8 @@ plugins: [
 ...
 <client-only>
     <vue3-html2pdf>
-        <section slot="pdf-content">
-        </section>
+        <template  v-slot:pdf-content>
+        </template>
     </vue3-html2pdf>
 </client-only>
 ...
