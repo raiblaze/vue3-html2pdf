@@ -285,7 +285,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 .vue-html2pdf {
   .layout-container {
     position: fixed;
